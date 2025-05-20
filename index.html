@@ -10,7 +10,7 @@
   <table border="1" id="csv-table"></table>
 
   <script>
-    fetch('https://raw.githubusercontent.com/YOUR_USERNAME/csv-publish/main/data.csv')
+    fetch('https://raw.githubusercontent.com/lakimtai/BCTC/main/cash_flow.csv')
       .then(response => response.text())
       .then(csv => {
         const data = Papa.parse(csv, { header: true }).data;
